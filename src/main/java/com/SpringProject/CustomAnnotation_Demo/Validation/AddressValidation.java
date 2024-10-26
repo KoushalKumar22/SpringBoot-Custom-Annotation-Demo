@@ -12,6 +12,6 @@ import java.lang.annotation.*;
 @Constraint(validatedBy = {EmployeeValidator.class})
 public @interface AddressValidation {
     String message() default "Fill the Correct City Name";
-    Class<?>[] group() default {};
+    Class<?>[] groups() default {};
     Class<? extends Payload>[] payload() default {};
 }
